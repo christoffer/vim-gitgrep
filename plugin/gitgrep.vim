@@ -15,7 +15,7 @@ if !exists('g:git_grep_no_map')
 endif
 
 function! s:GitGrep(terms)
-  let expr = g:git_grep_command.'"'.a:terms.'"'
+  let expr = g:git_grep_command.a:terms
   cgetexpr system(expr)
   cwin
   echo 'Number of matches: ' . len(getqflist())
