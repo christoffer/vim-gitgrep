@@ -22,7 +22,7 @@ function! s:GitGrep(terms)
 endfunction
 
 function! s:GitGrepWord()
-  call s:GitGrep(expand("<cword>"))
+  call s:GitGrep('"'.expand("<cword>").'"')
 endfunction
 
 command! -nargs=0 GitGrepWord :call s:GitGrepWord()
