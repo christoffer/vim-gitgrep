@@ -1,5 +1,6 @@
 " File: gitgrep.vim
 " Author: Ali Aghareza <aghareza AT gmail DOT com>
+" Modified by Christoffer Klang
 
 if exists("g:loaded_gitgrep") || &cp
     finish
