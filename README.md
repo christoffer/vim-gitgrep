@@ -8,9 +8,12 @@ This plugin adds command and keymappings to interact with git-grep from vim.
 
 #### GitGrep ####
 
-Grep terms are wrapped in a double-quote.
+Grep terms are passed as is to the git grep command.
 
-	:GitGrep <search_terms>
+#### Examples
+
+    :GitGrep my_term
+    :GitGrep "def my_function" -- **/*.rb
 
 #### GitGrepWord ####
 
